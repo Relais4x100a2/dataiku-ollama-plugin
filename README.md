@@ -31,7 +31,7 @@ This plugin is designed to be installed within your Dataiku instance. Follow the
 
 1.  **Prerequisites:**
     * **Dataiku DSS:** Ensure you have a working Dataiku Data Science Studio instance (version 12.0 or later recommended).
-    * **Ollama:** You need to have [Ollama](https://ollama.ai/) installed and running on your **GNU/Linux local machine** where the Dataiku agent executes Python code. The plugin communicates with Ollama via its default API endpoint (`http://localhost:11434`).
+    * **Ollama:** You need to have [Ollama](https://ollama.ai/) installed and running on your **Linux local machine** or **Mac** where the Dataiku agent executes Python code. The plugin communicates with Ollama via its default API endpoint (`http://localhost:11434`).
     * **Ollama Models:** Make sure you have downloaded the Ollama model(s) you intend to use with this plugin (e.g., `llama3:latest`, `gemma2:2b`). You can do this using the `ollama pull <model_id>` command in your terminal.
 
 2.  **Plugin Installation:**
