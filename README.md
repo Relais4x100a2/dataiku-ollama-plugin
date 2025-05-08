@@ -23,7 +23,7 @@ The plugin provides a Python recipe that takes an input dataset, a text column t
 * **JSON Output:** The effectiveness of this plugin relies on the Ollama model consistently producing output that can be parsed as JSON according to your Pydantic definition. Fine-tuning your prompts can be crucial for achieving the desired structured output.
 * **Performance:** The processing time will depend on the size of your dataset, the complexity of your prompts, and the performance of your local machine running Ollama. The concurrency control parameter can help manage resource usage.
 * **Error Handling:** While the plugin includes error handling, it's important to monitor the output dataset and the Dataiku recipe logs for any processing errors.
-* **GNU/Linux Requirement:** This plugin is specifically designed and tested for use with [Dataiku running on a GNU/Linux operating system](https://www.dataiku.com/product/get-started/linux/) where Ollama is installed locally.
+* **GNU/Linux Requirement:** This plugin is specifically designed and tested for use with Dataiku running on a [Linux](https://www.dataiku.com/product/get-started/linux/) or [Mac](https://www.dataiku.com/product/get-started/mac/) where Ollama is installed locally.
 
 ## Installation
 
