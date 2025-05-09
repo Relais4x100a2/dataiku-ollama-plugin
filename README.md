@@ -1,6 +1,7 @@
-# Dataiku Plugin: Ollama API Integration
+# Custom Plugin: Ollama API Integration in Dataiku
+![Logo Ollama](https://avatars.githubusercontent.com/u/151674099?s=48&v=4) + ![Logo Dataiku](https://avatars.githubusercontent.com/u/2335170?s=48&v=4)
 
-This Dataiku plugin allows you to leverage the power of the [Ollama](https://ollama.ai/) API directly within your [Dataiku](https://www.dataiku.com/) workflows. You can process a column of text data using a locally running Ollama model to generate content based on a free-form prompt and automatically extract structured information from the model's JSON output.
+This Dataiku custom plugin allows you to leverage the power of the ) [Ollama](https://ollama.ai/) API directly within your  [Dataiku](https://www.dataiku.com/) workflows. You can process a column of text data using a locally running Ollama model to generate content based on a free-form prompt and automatically extract structured information from the model's JSON output.
 
 ## Overview
 
@@ -69,7 +70,7 @@ Once the plugin is installed, you can use the "OLLAMA API" recipe in your Dataik
             key_actions: List[str] = Field(description='A list of main actions.')
             number_of_players: Optional[int] = Field(default=None, description='Number of players.')
             is_outdoor: Optional[bool] = Field(default=None, description='True if played outdoors.')
-            main_equipment: Dict[str, str] = Field(description='Main equipment (name: description).')
+            main_equipment: Optional[Dict[str, str]] = Field(default=None, description='A dictionary of the main equipment used, with equipment name and a brief description.')
             ```
         * The plugin uses this definition to generate a JSON schema for the prompt and to validate and extract data from the Ollama response.
 
